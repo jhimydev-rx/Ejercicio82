@@ -10,7 +10,7 @@ class Enemigo(nombre: String, vida: Int, var fuerza: Int) :
         "Soy el enemigo $nombre con $vida de vida y fuerza $fuerza."
 
     override fun atacar(objetivo: Personaje): String {
-        return "$nombre golpea a ${objetivo.nombre} causando $fuerza de dano" +
+        return "$nombre golpea a ${objetivo.nombre} causando $fuerza de danio" +
                 objetivo.recibirDanio(fuerza)
     }
 }

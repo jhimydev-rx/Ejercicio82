@@ -12,7 +12,7 @@ class Heroe(nombre: String, vida: Int, var poder: Int) :
         "Soy el heroe $nombre con $vida de vida y poder $poder."
 
     override fun atacar(objetivo: Personaje): String {
-        return "$nombre ataca a ${objetivo.nombre} causando $poder de daño.\n" +
+        return "$nombre ataca a ${objetivo.nombre} causando $poder de danio.\n" +
                 objetivo.recibirDanio(poder)
     }
 }
